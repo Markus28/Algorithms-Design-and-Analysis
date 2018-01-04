@@ -75,7 +75,7 @@ class UnweightedGraph:
                 scc_count += 1
 
         print "Ordering clusters..."
-        sccs = [[] for _ in range(scc_count)]
+        sccs = [[] for _ in xrange(scc_count)]
         for node in self.nodes:
             sccs[node.cluster].append(node.label)
 
