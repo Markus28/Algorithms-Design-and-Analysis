@@ -45,6 +45,5 @@ cpdef tuple dfs_primed(Node s, int cluster_label, int n = 0, int f = 0):
         s.f_time = f
         f += 1
         n -= 1
-
-
+        
         return n,f 
