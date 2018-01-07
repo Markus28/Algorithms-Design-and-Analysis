@@ -38,7 +38,7 @@ class WeightedGraph:
         for next_vertex in current.adjacencies.keys():
             try:
                 unvisited_map[next_vertex].resetDistance(current)
-                siftdown(unvisited, pops, unvisited_map[next_vertex].index)
+                bubbleup(unvisited, pops, unvisited_map[next_vertex].index)
             except KeyError as e:
                 pass
 
@@ -55,7 +55,7 @@ class WeightedGraph:
 
             
 
-def siftdown(heap, startpos, pos):
+def bubbleup(heap, startpos, pos):
     pos_calc = pos - startpos
     parentpos = (pos_calc-1)/2 + startpos
     while parentpos >= startpos and heap[pos] < heap[parentpos]:
