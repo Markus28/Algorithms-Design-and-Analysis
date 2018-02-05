@@ -1,5 +1,5 @@
 # Algorithms-Design-and-Analaysis
-Python Implementation of Algorithms presented in Stanford's "Algorithms: Design and Analysis" course.
+Python and Java Implementation of Algorithms presented in Stanford's "Algorithms: Design and Analysis" course.
 The following Algorithms and Datastructures have been implemented:
 ### Python and Cython
 - Merge Sort and related algorithms
