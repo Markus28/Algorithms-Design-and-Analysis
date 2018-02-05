@@ -11,5 +11,6 @@ The following Algorithms and Datastructures have been implemented:
 - Computation of strongly connected components in directed Graphs
 ### Java
 - Hash Table
+- Bloom Filter
 
 ### These are vanilla implementations only! The code was not optimized for performance!
