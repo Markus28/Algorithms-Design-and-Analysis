@@ -15,16 +15,21 @@ public class HashTable
 
     public Object get(Object key)
     {
-        return map[key.hashCode()%buckets].get(key);
+        return map[toIndex(key.hashCode())].get(key);
     }
     
     public void add(Object key, Object val)
     {
-        map[key.hashCode()%buckets].add(key, val);
+        map[toIndex(key.hashCode())].add(key, val);
     }
     
     public void remove(Object key)
     {
-        map[key.hashCode()%buckets].remove(key);
+        map[toIndex(key.hashCode())].remove(key);
+    }
+    
+    public int toIndex(int k)
+    {
+        return (k*(k+3))%buckets;
     }
 }
