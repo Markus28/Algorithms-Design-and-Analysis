@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=BloomFilter
+comment1.params=n\ k
+comment1.target=BloomFilter(int,\ int)
+comment2.params=key
+comment2.target=boolean\ get(java.lang.Object)
+comment3.params=key
+comment3.target=void\ set(java.lang.Object)
+comment4.params=x
+comment4.target=int\ hash(int)
+numComments=5
