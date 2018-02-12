@@ -1,3 +1,5 @@
+package Lookup;
+import Utils.PrimeList;
 import java.util.Random;
 
 
@@ -7,12 +9,13 @@ public class BloomFilter
     private int k;
     private int[] salts;
     private boolean[] filter;
+    private PrimeList primes = new PrimeList();
 
     public BloomFilter(int n, int k)
     {
-        this.n = n;
+        this.n = primes.primeCloseTo(n);
         this.k = k;
-        filter = new boolean[n];
+        filter = new boolean[this.n];
         salts = new int[k];
         Random rand = new Random();
         
@@ -21,6 +24,7 @@ public class BloomFilter
             salts[i] = rand.nextInt(10000) - 5000;
         }
     }
+    
     
     public boolean get(Object key)
     {

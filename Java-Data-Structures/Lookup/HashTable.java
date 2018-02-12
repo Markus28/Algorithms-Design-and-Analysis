@@ -1,3 +1,5 @@
+package Lookup;
+
 public class HashTable
 {
     private Bucket[] map;
@@ -30,6 +32,6 @@ public class HashTable
     
     public int toIndex(int k)
     {
-        return (k*(k+3))%buckets;
+        return Math.abs((k*(k+3)))%buckets;
     }
 }
