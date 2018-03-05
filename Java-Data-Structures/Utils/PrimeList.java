@@ -33,7 +33,7 @@ public class PrimeList extends SortedArray<Integer>
     public boolean isPrime(Integer k)
     {
         int[] bounds = primeRankBounds(k);
-        return get(approximateSearchBasic(k, bounds[0]-1, bounds[1]+1)) == k;
+        return get(approximateSearchBasic(k, bounds[0]-1, bounds[1]+1)).equals(k);
     }
     
     private static Integer[] loadPrimes()
