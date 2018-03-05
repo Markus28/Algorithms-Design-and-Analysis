@@ -21,7 +21,7 @@ public class Bucket
     {
         for(int i = 0; i < keys.size(); i++)
         {
-            if(keys.get(i) == x)
+            if(keys.get(i).equals(x))
             {
                 return vals.get(i);
             }
@@ -40,7 +40,7 @@ public class Bucket
         else{
             for(int i = 0; i < keys.size(); i++)
             {
-                if(keys.get(i) == x)
+                if(keys.get(i).equals(x))
                 {
                     vals.set(i, y);
                 }
