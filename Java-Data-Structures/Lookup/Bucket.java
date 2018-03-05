@@ -52,7 +52,7 @@ public class Bucket
     {
         for(int i = 0; i < keys.size(); i++)
         {
-            if(keys.get(i) == x)
+            if(keys.get(i).equals(x))
             {
                 keys.remove(i);
                 vals.remove(i);
