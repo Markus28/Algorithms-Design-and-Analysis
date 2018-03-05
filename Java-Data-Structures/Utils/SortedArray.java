@@ -21,11 +21,11 @@ public class SortedArray<T extends Comparable <T>>
     
     protected int approximateSearchBasic(T obj, int lower, int upper)
     {
-        int i = arr.length/2;
+        int i = (lower + upper)/2;
         
         while(upper >= lower)
         {
-            if(arr[i] == obj)
+            if(arr[i].equals(obj))
             {
                 return i;
             }
