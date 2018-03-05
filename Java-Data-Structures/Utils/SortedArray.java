@@ -16,7 +16,7 @@ public class SortedArray<T extends Comparable <T>>
     
     public boolean exists(T obj)
     {
-        return get(approximateSearchBasic(obj, 0, arr.length - 1)) == obj;
+        return get(approximateSearchBasic(obj, 0, arr.length - 1)).equals(obj);
     }
     
     protected int approximateSearchBasic(T obj, int lower, int upper)
