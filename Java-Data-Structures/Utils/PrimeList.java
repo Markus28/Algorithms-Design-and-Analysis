@@ -39,7 +39,7 @@ public class PrimeList extends SortedArray<Integer>
     private static Integer[] loadPrimes()
     {
         Integer[] primes = new Integer[1000000];
-        File file = new File("primes1.txt");
+        File file = new File("Java-Data-Structures/Utils/primes1.txt");
         BufferedReader reader = null;
         try{
             reader = new BufferedReader(new FileReader(file));

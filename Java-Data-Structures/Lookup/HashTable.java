@@ -1,5 +1,6 @@
 package Lookup;
 
+
 public class HashTable<K, E>
 {
     private Bucket<K, E>[] map;
@@ -8,10 +9,12 @@ public class HashTable<K, E>
     public HashTable(int buckets)
     {
         this.buckets = buckets;
+
         map = new Bucket[buckets];
+
         for(int i = 0; i < buckets; i++)
         {
-            map[i] = new Bucket();
+            map[i] = new Bucket<>();
         }
     }
 
