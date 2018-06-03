@@ -4,20 +4,20 @@ import java.util.LinkedList;
 
 
 
-public class Bucket
+public class Bucket<K, E>
 {
-    private LinkedList keys;
-    private LinkedList vals;
+    private LinkedList<K> keys;
+    private LinkedList<E> vals;
 
 
     public Bucket()
     {
-       keys = new LinkedList();
-       vals = new LinkedList();
+       keys = new LinkedList<>();
+       vals = new LinkedList<>();
     }
 
 
-    public Object get(Object x)
+    public E get(K x)
     {
         for(int i = 0; i < keys.size(); i++)
         {
@@ -30,7 +30,7 @@ public class Bucket
         return null;
     }
     
-    public void add(Object x, Object y)
+    public void add(K x, E y)
     {
         if(get(x) == null)
         {
@@ -48,7 +48,7 @@ public class Bucket
         }
     }
     
-    public void remove(Object x)
+    public void remove(K x)
     {
         for(int i = 0; i < keys.size(); i++)
         {

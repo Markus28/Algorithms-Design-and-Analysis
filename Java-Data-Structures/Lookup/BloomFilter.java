@@ -3,7 +3,7 @@ import Utils.PrimeList;
 import java.util.Random;
 
 
-public class BloomFilter
+public class BloomFilter<K>
 {
     private int n;
     private int k;
@@ -26,7 +26,7 @@ public class BloomFilter
     }
     
     
-    public boolean get(Object key)
+    public boolean get(K key)
     {
         for(int salt: salts)
         {
@@ -39,7 +39,7 @@ public class BloomFilter
         return true;
     }
     
-    public void set(Object key)
+    public void set(K key)
     {
         for(int salt: salts)
         {
@@ -47,7 +47,7 @@ public class BloomFilter
         }
     }
     
-    public int hash(int x)
+    private int hash(int x)
     {
         x = ((x >> 16)^x)*0x45d9f3b;
         x = ((x >> 16)^x)*0x45d9f3b;

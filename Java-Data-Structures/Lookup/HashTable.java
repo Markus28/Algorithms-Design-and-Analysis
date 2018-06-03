@@ -1,8 +1,8 @@
 package Lookup;
 
-public class HashTable
+public class HashTable<K, E>
 {
-    private Bucket[] map;
+    private Bucket<K, E>[] map;
     private int buckets;
 
     public HashTable(int buckets)
@@ -15,22 +15,22 @@ public class HashTable
         }
     }
 
-    public Object get(Object key)
+    public E get(K key)
     {
         return map[toIndex(key.hashCode())].get(key);
     }
     
-    public void add(Object key, Object val)
+    public void add(K key, E val)
     {
         map[toIndex(key.hashCode())].add(key, val);
     }
     
-    public void remove(Object key)
+    public void remove(K key)
     {
         map[toIndex(key.hashCode())].remove(key);
     }
     
-    public int toIndex(int k)
+    private int toIndex(int k)
     {
         return Math.abs((k*(k+3)))%buckets;
     }
