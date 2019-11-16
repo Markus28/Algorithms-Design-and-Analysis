@@ -12,5 +12,9 @@ The following Algorithms and Datastructures have been implemented:
 ### Java
 - Hash Table
 - Bloom Filter
+### C++
+- Fibonacci Heap
+- Kruskal using Union-Find forest
+- Kruskal using Fibonacci Heap
 
 ### These are vanilla implementations only! The code was not optimized for performance!
