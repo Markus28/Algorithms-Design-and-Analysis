@@ -9,12 +9,10 @@ The following Algorithms and Datastructures have been implemented:
 - Breadth-first search
 - Depth-first search
 - Computation of strongly connected components in directed Graphs
-### Java
-- Hash Table
-- Bloom Filter
 ### C++
 - Fibonacci Heap
 - Kruskal using Union-Find forest
 - Kruskal using Fibonacci Heap
-
-### These are vanilla implementations only! The code was not optimized for performance!
+### Java
+- Hash Table
+- Bloom Filter
