@@ -9,6 +9,7 @@ The following Algorithms and Datastructures have been implemented:
 - Breadth-first search
 - Depth-first search
 - Computation of strongly connected components in directed Graphs
+- Las Vegas median finding
 ### C++
 - Fibonacci Heap
 - Kruskal using Union-Find forest
